@@ -6,7 +6,7 @@ const getSum = () => {
 	const existingAns=document.getElementById("ans");
 	if(existingAns) existingAns.remove();
 
-	const prices=document.queryselectorAll(".price");
+	const prices=document.querySelectorAll(".price");
 	let total=0;
 	prices.forEach((priceEl)=>{
 		total+=parseFloat(priceEl.textContent)||0;
