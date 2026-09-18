@@ -3,10 +3,10 @@ getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
 const getSum = () => {
-	const existingAns=document.getElementByid("ans");
+	const existingAns=document.getElementById("ans");
 	if(existingAns) existingAns.remove();
 
-	const price=document.queryselectorAll(".price");
+	const prices=document.queryselectorAll(".price");
 	let total=0;
 	prices.forEach((priceEl)=>{
 		total+=parseFloat(priceEl.textContent)||0;
